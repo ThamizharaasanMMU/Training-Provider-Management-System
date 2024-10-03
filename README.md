@@ -49,4 +49,4 @@ education.
 
 ## Further Description and User Manual
 
-For more detailed information, please refer to the [Functional Requirements PDF]("./Report.pdf").
+For more detailed information, please refer to the [Functional Requirements PDF]("https://github.com/ThamizharaasanMMU/Training-Provider-Management-System/blob/main/Report.pdf").
