@@ -1,0 +1,138 @@
+/* Reset styles */
+html,
+body,
+h1,
+p,
+label,
+input,
+#login,
+select {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-image: url("/Assignment/images/loginbg.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.container {
+	max-width: 400px;
+	padding: 20px;
+	background-color: rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+}
+
+h1 {
+	font-size: 32px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+	background-color: #0f2b41;
+	position: relative;
+	z-index: 1;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.input-field {
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.input-field label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+	color: black;
+	position: absolute;
+	left: 15px;
+	top: 16px;
+}
+
+.input-field input,
+.input-field select {
+	width: 100%;
+	padding: 8px;
+	border: none;
+	border-radius: 30px;
+	background-color: #ffffff;
+	color: black;
+	font-size: 16px;
+	outline: none;
+	background: #eeeeee;
+	padding: 23px 15px 7px;
+	transition: .3s ease;
+}
+
+.input-field input:focus~label,
+.input-field input:not(:placeholder-shown)~label {
+	font-size: .85rem;
+	top: 5px;
+}
+
+.input-field input:focus {
+	border: 2px solid var(--primary);
+}
+
+#login {
+	width: 100%;
+	padding: 10px;
+	margin-top: 20px;
+	background-color: #46ccd1;
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: bold;
+	border: none;
+	border-radius: 30px;
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+	margin-right: 10px;
+	overflow: hidden;
+}
+
+#login:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+#login:hover {
+	background-color: #563693;
+	padding-right: 25px;
+}
+
+#login:hover:after {
+	opacity: 1;
+	right: 0;
+}
+
+#signup a {
+	color: white;
+}
+
+#signup a:link,
+a:visited {
+	text-decoration: none;
+}
+
+#signup a:hover,
+a:active {
+	text-decoration: underline;
+}
